@@ -5,6 +5,7 @@ def my_select(collection)
     if yield collection[counter]
       new.push(yield collection[counter])
     end
+    counter += 1
   end
   new
 end
